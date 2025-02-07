@@ -1,8 +1,5 @@
-function solution(n) {
-    let answer = 0;
-    for(let i=1;i<n;i++){
-        if(n%i===1) answer = i;
-        if(answer!==0)break;
+function solution(n,x=1) {
+    while(x++){
+        if(n%x===1) return x;
     }
-    return answer;
 }
