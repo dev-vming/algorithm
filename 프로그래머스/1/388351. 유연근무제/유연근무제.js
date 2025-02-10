@@ -5,7 +5,6 @@ function solution(schedules, timelogs, startday) {
     for(let i=0; i<schedules.length; i++){
         const time = schedules[i];
         const mm = time%100;
-        console.log('---',time)
         let successDays = 0;
         for(let j=0; j<timelogs[i].length; j++){
             // 주말이라면 성공 횟수 추가
